@@ -14,6 +14,7 @@ Steps to run:
   - prime-service-api
   - prime-service-impl
   - prime-server
+      - When you maven install the prime-server, it will run unit tests.
 3. You will need to spring-boot:run the prime-server once everything has been maven installed properly (assuming there were no complications).
 4. Run the Redis-server (you shouldn't need to change any variables).
 
