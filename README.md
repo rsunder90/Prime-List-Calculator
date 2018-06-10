@@ -15,6 +15,7 @@ Steps to run:
   - prime-service-impl
   - prime-server
 3. You will need to spring-boot:run the prime-server once everything has been maven installed properly (assuming there were no complications).
+4. Run the Redis-server (you shouldn't need to change any variables).
 
 Alternatively, you could take the war file produced from the maven install and drop it in a tomcat server for testing.
 
@@ -25,4 +26,4 @@ Endpoints:
 -{host}:8080/getPrimes - This is a END endpoint looking for a single parameter, an ID. Returns a list of all the primes. If there are no prime numbers within the initial boundaries given from the first call to /calculatePrimes, this will return nothing but will have a 200 status code.
 
 Some Notes:
-- I'm almost certain this app will break if you give a number larger than the size of the Java integer (2^31).
+- I'm almost certain this app will break if you give a number larger than the size of the Java integer (2^31). This can be something I work on later.
