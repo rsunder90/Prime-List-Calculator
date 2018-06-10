@@ -20,8 +20,9 @@ Alternatively, you could take the war file produced from the maven install and d
 
 Endpoints:
 
-{host}:8080/calculatePrimes - This is a POST endpoint looking for two parameters, start and end (both integers). Returns an ID that should be used with the second endpoint
-{host}:8080/getPrimes - This is a END endpoint looking for a single parameter, an ID. Returns a list of all the primes. If there are no prime numbers within the initial boundaries given from the first call to /calculatePrimes, this will return nothing but will have a 200 status code.
+-{host}:8080/calculatePrimes - This is a POST endpoint looking for two parameters, start and end (both integers). Returns an ID that should be used with the second endpoint.
+
+-{host}:8080/getPrimes - This is a END endpoint looking for a single parameter, an ID. Returns a list of all the primes. If there are no prime numbers within the initial boundaries given from the first call to /calculatePrimes, this will return nothing but will have a 200 status code.
 
 Some Notes:
 - I'm almost certain this app will break if you give a number larger than the size of the Java integer (2^31).
